@@ -1,0 +1,17 @@
+
+
+<ng-content select="h1"></ng-content>
+<h1>{{name}}</h1>
+<h1>{{age}}</h1>
+<!-- Passing Data form parent to component is very easy
+1.Import Input and define the name filed 
+2.And pass data
+3.We can pass array of Objects Refer code -->
+
+<button (click)="passdata()">Pass data</button>
+<!-- Passing Data from Child to componets
+1.We can do it using Output and Emitter dependcy
+Create emmiteer of any required type 
+THen add function to set data to it 
+Add that event in parent passed data  ,and called recieved data function
+write recived data funcction to accept it -->
