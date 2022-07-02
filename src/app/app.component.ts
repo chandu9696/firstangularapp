@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { IUser } from 'src/Modals/user';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,4 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'firstangularapp';
+  // mobileNumber:string='9970424520'
+
+  // obj:IUser[]=[
+  //   {name:'ram',age:20},
+  //   {name:'ram',age:20},
+  //   {name:'ram',age:20}
+  // ]
+  // receivedata(e:any)
+  // {
+  //   console.log(e)
+  // }
 }
