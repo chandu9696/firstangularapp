@@ -1,0 +1,132 @@
+.main_login
+{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    font-family: sofia-pro;
+    overflow-y: hidden;
+}
+
+.left_login
+{
+    width: 60%;
+    height: 100vh;
+    /* background-color: aqua; */
+}
+.right_login
+{
+    /* width: 40%; */
+    height: 100vh;
+    /* background-color: azure; */
+}
+.ele
+{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+.ele h1
+{
+    text-align: center;
+}
+.ele img
+{
+    width: 60%;
+    align-self: center;
+}
+.right_ele
+{
+    height: 100%;
+    display: flex;
+    /* gap: 20px; */
+    flex-direction: column;
+    /* align-items: center; */
+    margin-top: 4.5rem;
+}
+.input_
+{
+    display: flex;
+    gap:10px;
+    flex-direction: column;
+}
+input
+{
+    font-size: 1.4857142857rem;
+    font-family: sofia-pro;
+    font-style: normal;
+    font-weight:400;
+    outline: none;
+    border: 1px solid #d2daed!important;
+    border-radius: 8px!important;
+    padding-left: 1rem!important;
+    padding-right: 2rem!important;
+    color: #364464!important;
+}
+
+h4
+{
+    margin-top: 15px;
+   align-self: center;
+}
+
+label
+{
+    margin-top: 15px;
+}
+.btn[disabled]
+{
+    background-color: #eceff8;
+    color: #979caa!important;
+    border: none;
+}
+
+.btn
+{
+    margin-top: 15px;
+    border-radius: 10px;
+    height: 30px;
+    background-color: blue;
+    border: 1px solid blue;
+    color: white;
+}
+.sso_btn
+{
+    display: flex;
+    justify-content: space-around
+}
+.fb
+{
+    max-width: 200px;
+    height: 50px;
+    gap: 6px;
+    display: flex;
+    border-radius: 10px;
+    align-items: center;
+}
+.gg
+{
+    max-width: 200px;
+    border-radius: 10px;
+    gap: 6px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+@media screen and (max-width:750px) {
+
+.left_login
+{
+    display: none;
+    /* background-color: aqua; */
+}
+.right_login
+{
+    margin: auto;
+    width: 300px;
+    
+}
+}

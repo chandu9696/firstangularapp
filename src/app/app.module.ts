@@ -10,6 +10,8 @@ import { CcodePipe } from '../pipes/ccode.pipe';
 import { ApiData1Component } from './api-data1/api-data1.component';
 import {HttpClientModule} from '@angular/common/http';
 import { ApiData2Component } from './api-data2/api-data2.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,7 +19,9 @@ import { ApiData2Component } from './api-data2/api-data2.component';
     ColorgiverDirective,
     CcodePipe,
     ApiData1Component,
-    ApiData2Component
+    ApiData2Component,
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,

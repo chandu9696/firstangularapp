@@ -1,0 +1,143 @@
+.main_login
+{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    font-family: sofia-pro;
+    overflow-y: auto;
+}
+
+.left_login
+{
+    width: 60%;
+    
+    /* background-color: aqua; */
+}
+.right_login
+{
+    /* max-width: 30%;  */
+    max-width: 300px!important;
+    /* max-width: 20; */
+    height: auto;
+    /* background-color: azure; */
+}
+.ele
+{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+.ele h1
+{
+    text-align: center;
+}
+.ele img
+{
+    width: 60%;
+    align-self: center;
+}
+.right_ele
+{
+ 
+    display: flex;
+    /* gap: 20px; */
+    flex-direction: column;
+    /* align-items: center; */
+    margin-top: 4.5rem;
+}
+.input_
+{
+    display: flex;
+    gap:10px;
+    flex-direction: column;
+}
+input
+{
+    font-size: 1.3857142857rem;
+    font-family: sofia-pro;
+    font-style: normal;
+    font-weight:400;
+    outline: none;
+    border: 1px solid #d2daed!important;
+    border-radius: 8px!important;
+    padding-left: 1rem!important;
+    padding-right: 2rem!important;
+    color: #364464!important;
+    height: 39px;
+}
+input:focus
+{
+    border: 1px solid aqua!important;
+}
+
+h4
+{
+    margin-top: 15px;
+   align-self: center;
+}
+
+label
+{
+    margin-top: 15px;
+}
+.btn[disabled]
+{
+    background-color: #eceff8;
+    color: #979caa!important;
+    border: none;
+    height: 39px!important;
+}
+
+.btn
+{
+    margin-top: 15px;
+    border-radius: 10px;
+    height: 39px;
+    background-color: blue;
+    border: 1px solid blue;
+    color: white;
+}
+.sso_btn
+{
+    display: flex;
+    /* justify-content: space-around; */
+    gap:10px;
+  
+}
+.fb
+{
+    max-width: 200px;
+    height: 50px;
+    gap: 6px;
+    display: flex;
+    border-radius: 10px;
+    align-items: center;
+}
+.gg
+{
+    max-width: 200px;
+    border-radius: 10px;
+    gap: 6px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+@media screen and (max-width:750px) {
+
+.left_login
+{
+    display: none;
+    /* background-color: aqua; */
+}
+.right_login
+{
+    margin: auto;
+    max-width: 300px!important;
+    
+}
+
+}

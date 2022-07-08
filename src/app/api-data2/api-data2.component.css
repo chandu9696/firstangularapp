@@ -25,3 +25,19 @@ img
     overflow: hidden;
  
 }
+@media screen and (max-width:950px) {
+
+    .user_main
+    {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin: auto;
+        justify-content: center;
+    }
+.ind_user
+{
+   
+    
+ margin: auto;
+}
+}
