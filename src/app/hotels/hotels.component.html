@@ -1,0 +1,18 @@
+
+<div class="main_hotels">
+    {{getsearchdata()}}
+   <ng-container *ngFor="let f of hotel_data;">
+    {{SetSearch_h(f.name)}} 
+    <ng-container *ngIf="Status()">
+    <app-hotel [f]="f"></app-hotel>
+    </ng-container>
+</ng-container>
+</div>
+<ng-container *ngIf="isloading">
+    <app-loading-spinner></app-loading-spinner>
+</ng-container>
+<!-- <app-user 
+*ngFor="let f of obj" [name]="f.name" [age]="f.age" (myevent)="receivedata($event)"
+><h1>Html from parent</h1></app-user> -->
+
+

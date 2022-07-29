@@ -1,0 +1,8 @@
+<!-- <ng-content select=".main_hotels"></ng-content> -->
+<div class="main_hotel">
+   <div class="img_hotel"> <img src="{{f.featured_image}}"/></div>
+   <div>{{f.name}}</div>
+   <div>{{f.cuisines}}</div>
+   <button (click)="go(f.id)" class="btn_visit">Visit</button>
+   <button (click)="addtofav(f)"class="btn_star">Star</button>
+</div>

@@ -1,0 +1,40 @@
+<!-- Property Binding 
+{{}} can only have string values
+we can assign value to html attriute of varible of ts by using them under [] bracked
+
+<button [class]="red" [disabled]="green">Test</button>
+
+Similar case for event binding just make sure we remove on for eg onclick we used it as click
+
+Now we can use <button (click)='fun()'></button>
+
+also to get an input values in an varible we use (input)='getinput($event.target.value)'
+both need property an event binding
+[(ngModule)]='input' it comes from form module it listen to onchange and set the value
+
+we can apply it to almost every input tag to save our time
+
+Directives:
+we have *ngIf we can have else by using ng template
+*ngFor to iterate over something
+ngClass is used for conditonal formating as well
+
+This is one of the type of conditional formating
+[class]="e?'red':'blue'"
+
+Then we have a multiple pipes for eg.date currency title date is more useful
+
+for passing data parent to child we used @input and to pass data from child to parent we emit event by using @output
+
+content project hepls us to pass html from parent component to child we can also get specific tag by using select
+
+contrutor will be called when class instace is created while ngonit called when component is created 
+
+in construtor we get our defined var values as undefined
+
+ondestroy will be callled when the component is unmounted 
+ngonchages will be called before ngonit whenvers the data values changes it will be get called again
+we can used it as called api when values chages
+
+ondestroy used to remove the unnessary even listener or unscribe the api calls
+ -->

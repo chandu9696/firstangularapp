@@ -1,0 +1,53 @@
+.home_main
+{
+    height: 10vh;
+    display: flex;
+    background-color: blue;
+    opacity: 0.8;
+    justify-content: space-around;
+    color: white;
+    align-items: center;
+}
+.home_main div
+{
+    padding: 20px;
+}
+.home_main a
+{
+    text-decoration: none;
+    color: white;
+}
+.active
+{
+    background-color: turquoise;
+}
+.search_div img
+{
+    padding: 8px;
+}
+.search_div
+{
+    padding: 0!important;
+    width: 70%;
+    display: flex;
+    border-radius: 30px;
+    border: 1px solid white;
+    background-color:blue;
+    opacity: 0.7;
+    height: 30px;
+    align-items: center;
+    mix-blend-mode:normal;
+    
+    /* z-index: 2; */
+}
+input
+{
+    outline: none;
+    border: none;
+    background-color:inherit;
+    width: 90%;
+    color: white;
+    height: 20px;
+    mix-blend-mode:unset;
+
+}

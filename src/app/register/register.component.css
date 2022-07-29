@@ -11,6 +11,7 @@
 
 .left_login
 {
+    margin-top: 4.5rem;
     width: 60%;
     
     /* background-color: aqua; */
@@ -29,7 +30,7 @@
     height: 100%;
     flex-direction: column;
     align-content: center;
-    justify-content: center;
+    /* justify-content: center; */
 }
 .ele h1
 {
@@ -37,7 +38,7 @@
 }
 .ele img
 {
-    width: 60%;
+    max-width: 500px;
     align-self: center;
 }
 .right_ele
@@ -126,7 +127,7 @@ label
     display: flex;
     align-items: center;
 }
-@media screen and (max-width:750px) {
+@media screen and (max-width:810px) {
 
 .left_login
 {

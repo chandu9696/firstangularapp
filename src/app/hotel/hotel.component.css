@@ -1,0 +1,53 @@
+.main_hotel
+{
+    border: 1px solid blue;
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+    border-radius: 10px;
+    width: 300px;
+    height: 300px;
+    margin: 5px auto;
+    justify-self: center;
+    align-self: center;
+    position: relative;
+
+}
+.btn_visit
+{
+    position: absolute;
+    left: 2px;
+    bottom: 2px;
+}
+.btn_star
+{
+    position: absolute;
+    right: 2px;
+    bottom: 2px;
+}
+/* .img_hotel
+{
+    box-sizing: border-box;
+    padding: 5px;
+} */
+.main_hotel img
+{
+    
+    width: 100%;
+    border-radius: 10px;
+    height: 220px;
+}
+app-hotel
+{
+    margin: auto;
+}
+@media  screen and (max-width:734px) {
+    .main_hotel
+{
+    
+    width: 80%;
+   
+}
+
+    
+}

@@ -10,16 +10,21 @@
         <div class="right_ele">
       
             <h3>Sign Up</h3>
-            <div class="input_">
+            <form class="input_" #registerForm="ngForm">
                 <label>Username</label>
-                <input type="text">
+                <input type="text" required ngModel name="username">
                 <label>Email</label>
-                <input type="text">
+                <input type="email" required ngModel name="email">
                 <label>Password</label>
-                <input type="password">
-            </div>
-            <button class="btn" [disabled]="true">Proceed</button>
-            <div><label>Don't have account?<a href="#">Sign in</a></label></div>
+                <input type="password" required 
+                ngModel 
+                name="password"
+                minlength="6">
+             
+            </form>
+            <!-- {{registerForm.value | json}} -->
+            <button class="btn" [disabled]="!registerForm.valid" (click)="submit(registerForm)">Proceed</button>
+            <div><label>Don't have account?<a routerLink="/login">Sign in</a></label></div>
             <h4>or</h4>
             <div class="sso_btn">
                 <button class="fb">

@@ -55,7 +55,7 @@
 }
 input
 {
-    font-size: 1.4857142857rem;
+    font-size: 1.3857142857rem;
     font-family: sofia-pro;
     font-style: normal;
     font-weight:400;
@@ -65,8 +65,12 @@ input
     padding-left: 1rem!important;
     padding-right: 2rem!important;
     color: #364464!important;
+    height: 39px;
 }
-
+input:focus
+{
+    border: 1px solid aqua!important;
+}
 h4
 {
     margin-top: 15px;
@@ -88,7 +92,7 @@ label
 {
     margin-top: 15px;
     border-radius: 10px;
-    height: 30px;
+    height: 39px;
     background-color: blue;
     border: 1px solid blue;
     color: white;

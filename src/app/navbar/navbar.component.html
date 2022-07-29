@@ -1,0 +1,31 @@
+<div class="home_main">
+   <!-- {{check()}} -->
+    <div>
+        <a  routerLink="/">Home</a>
+    </div>
+    <div class="search_div">
+        <img src="https://rc.jiomeet.jio.com/assets/img/chat-search-icon.svg">
+        <input type="text" [(ngModel)]="search_hotel" 
+        (ngModelChange)="onChange($event)" >
+    </div>
+    
+  <div *ngIf="!check();else else1">
+        <a routerLink="/login">Sign In</a>
+    </div>
+    <ng-template #else1>
+<div>
+    <a routerLink="/favhotel">fav_hotel {{check()}}</a>
+</div>
+</ng-template>
+    <div *ngIf="!check(); else else2">
+        <a  routerLink="/signup">Sign Up</a>
+    </div>
+    <!--  -->
+    <ng-template #else2>
+    <div>
+       <button (click)="logout()">logout</button>
+    </div>
+    </ng-template>
+
+
+</div>

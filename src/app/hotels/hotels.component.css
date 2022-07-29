@@ -1,0 +1,27 @@
+.main_hotels
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 10px;
+    justify-content: center;
+}
+@media  screen and (max-width:980px) {
+    .main_hotels
+{
+    
+    grid-template-columns: 1fr 1fr;
+   
+}
+
+    
+}
+@media  screen and (max-width:734px) {
+    .main_hotels
+{
+    
+    grid-template-columns: 1fr;
+   
+}
+
+    
+}

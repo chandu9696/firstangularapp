@@ -12,6 +12,16 @@ import {HttpClientModule} from '@angular/common/http';
 import { ApiData2Component } from './api-data2/api-data2.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { HomeComponent } from './home/home.component';
+import { HotelsComponent } from './hotels/hotels.component';
+import { HotelComponent } from './hotel/hotel.component';
+import { HotelDetailsComponent } from './hotel-details/hotel-details.component';
+import { LoadingSpinnerComponent } from './loading-spinner/loading-spinner.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { FavHotelComponent } from './fav-hotel/fav-hotel.component';
+import { ReviseconceptComponent } from './reviseconcept/reviseconcept.component';
+import { ObservableComponent } from './observable/observable.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,13 +31,23 @@ import { RegisterComponent } from './register/register.component';
     ApiData1Component,
     ApiData2Component,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    NavbarComponent,
+    HomeComponent,
+    HotelsComponent,
+    HotelComponent,
+    HotelDetailsComponent,
+    LoadingSpinnerComponent,
+    FavHotelComponent,
+    ReviseconceptComponent,
+    ObservableComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
