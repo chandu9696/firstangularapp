@@ -1,0 +1,50 @@
+<div class="Main_Setting">
+   
+    <div class="Setting_wrap">
+    <div class="header_wrap">  
+        <h4>Setting</h4>
+        <button (click)="toggle()">C</button>
+    </div>
+      <div class="Wrap_all">
+        <div class="options">
+            <div [class]="active_number===1?'back_color':''"><button (click)="active_number=1">
+                <span><img [src]="active_number===1?'https://rc.jiomeet.jio.com/assets/images/profile_selected.svg':'https://jiomeetpro.jio.com/assets/images/settings_audio_selected.svg'"/></span>
+            
+                &nbsp;Video
+            </button></div>
+            <div [class]="active_number===2?'back_color':''"><button (click)="active_number=2"><span><img src="https://jiomeetpro.jio.com/assets/images/settings_audio_selected.svg"/></span>&nbsp;Audio</button></div>
+            <div [class]="active_number===3?'back_color':''"><button (click)="active_number=3"><span><img src="https://rc.jiomeet.jio.com/assets/images/profile_selected.svg"/></span>&nbsp;Profile</button></div>
+            <div [class]="active_number===4?'back_color':''"><button (click)="active_number=4"><span><img src="https://rc.jiomeet.jio.com/assets/images/profile_selected.svg"/></span>&nbsp;Notification</button></div>
+            <div [class]="active_number===5?'back_color':''"><button (click)="active_number=5"><span><img src="https://rc.jiomeet.jio.com/assets/images/profile_selected.svg"/></span>&nbsp;Live Stream</button></div>
+        </div>
+        <div class="tab_expand">
+            
+            <div *ngIf="active_number===1" class="video_tab">
+                <div class="Camera">
+                    <h4>Camera:</h4>
+                    <select class="select_wire">
+                        <option>Gia Wire</option>
+                        <option>Gia Wire</option>
+                        <option>Gia Wire</option>
+                    </select>
+                </div>
+                <div class="Income_Setting">
+
+                </div>
+            </div>
+            <div  *ngIf="active_number===2" class="audio_tab">
+                <app-todo></app-todo>
+            </div>
+            <div  *ngIf="active_number===3" class="Profile">
+                <h1>Profile</h1>
+            </div>
+            <div  *ngIf="active_number===4" class="Notification">
+                <h1>Notification</h1>
+            </div>
+            <div  *ngIf="active_number===5" class="Live_stream">
+                <h1>Live Stream</h1>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>

@@ -1,0 +1,75 @@
+<div class="main_sponser">
+    <div class="sponser_item">
+        <div [class]="flagforsponser===0?'border_bot':''"><button (click)="flagforsponser=0">Gold</button></div>
+        <div [class]="flagforsponser===1?'border_bot':''"><button (click)="flagforsponser=1">Silver</button></div>
+        <div [class]="flagforsponser===2?'border_bot':''"><button (click)="flagforsponser=2">Premium</button></div>
+    </div>
+    <div>
+        <h1>Gold add</h1>
+        <input type="text" (input)="Add_input($event)"/>
+        <button (click)="AddSponser()">Add</button>
+    </div>
+    <div class="display_wrap">
+        <div>
+            <h1>Gold</h1>
+            <div *ngFor="let f of list_of_gold">
+                <h4 class="gold_wrap">{{f.data}}</h4>
+            </div>
+
+        </div>
+        <div class="silver_wrap">
+            <h1>Silver</h1>
+            <div *ngFor="let f of list_of_silver">
+                <h4>{{f.data}}</h4>
+            </div>
+
+        </div>
+        <div class="platinum_wrap">
+            <h1>Plat</h1>
+            <div *ngFor="let f of list_of_platinium">
+                <h4>{{f.data}}</h4>
+            </div>
+
+        </div>
+    </div>
+    <!-- <div *ngIf="flagforsponser===1">
+        <h1>Silver add</h1>
+        <input type="text"/>
+        <button (click)="AddSponser()">Add</button>
+    </div>
+    <div *ngIf="flagforsponser===2">
+        <h1>Premium add</h1>
+        <input type="text"/>
+        <button (click)="AddSponser()">Add</button>
+    </div> -->
+    <!-- <div>Hello</div>
+    <div>Hello</div>
+    <div>Hello</div>
+    <div>Hello</div>
+    <div>Hello</div>
+    <div>Hello</div>
+    <div>Hello</div>
+    <div>Hello</div>
+    <div>Hello</div>
+    <div>Hello</div>
+    <div>Hello</div> -->
+    <button (click)="Pop_Up($event)">POp up</button>
+    
+    <div  [hidden]='pop_up_toggle' [class]="!class_for_pop_up?'pop_up':'pop_up1'" #pop>
+        <img src={{Image_Link}} style="width: 200px;"/>
+        <h1>Pop up</h1>
+    </div>  
+
+    <form>
+
+
+        <label for="imageUpload" class="input_file">change Profile</label>
+        <input type="file" id="imageUpload" accept="image/*"(change)="Preview_Set($event)" style="display: none">
+    </form>
+    
+    <button (click)="Setting_Toggle()">Setting</button>
+
+    <app-setting *ngIf="Setting_toggle" (myevent)="Setting_Toggle()"></app-setting>
+    
+   
+</div>

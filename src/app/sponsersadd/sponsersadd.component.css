@@ -1,0 +1,59 @@
+.main_sponser
+{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+}
+
+.sponser_item
+{
+    background-color: white;
+
+    margin:2rem;
+    display: flex;
+    gap:20px
+}
+.border_bot
+{
+    border-bottom: 1px solid black;
+}
+.sponser_item button
+{
+    background-color: white;
+    border: none;
+}
+.display_wrap
+{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.gold_wrap
+{
+    white-space: nowrap; 
+    width: 100px; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+.pop_up
+{
+    width: 50%;
+    height: 300px;
+    background-color: bisque;
+}
+.input_file
+{
+   color: aqua;
+   font-size: 20px;
+}
+.pop_up1
+{
+    position: absolute;
+    top:30px;
+    width: 50%;
+    height: 300px;
+    background-color: bisque;
+}

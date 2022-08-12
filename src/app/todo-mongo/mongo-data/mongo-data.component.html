@@ -1,0 +1,45 @@
+<div class="main_todo">
+
+    <div class="header_todo">
+        <h1>This is our Mongo App</h1>
+        <button (click)="toggleIndicator()" *ngIf="!toggleindicate">Add Product</button>
+    </div>
+    <div *ngIf="toggleindicate">
+        <form class="input_todo">
+           
+            <label for="description">Name</label>
+           <input type="text" name="description" [formControl]="Name">
+           <label for="description">Modal</label>
+           <input type="text" name="description" [formControl]="modal">
+           <label for="description">Price</label>
+           <input type="text" name="description" [formControl]="price">
+           <label for="description">category</label>
+           <input type="text" name="description" [formControl]="category"/>
+
+           <button (click)="check_value()" class="btn" [disabled]="!loginForm.valid">Proceed</button>
+
+        </form>
+       
+
+</div>
+<div *ngFor="let f of Data" class="main_mongo_wrap">
+    <div class="main_mongo">
+        <div>
+        <label>Name : </label>
+        <p>{{f.Name}}</p>
+        </div>
+        <div>
+        <label>Price : </label>
+        <p>{{f.price}}</p>
+        </div>
+        <div>
+        <label>Modal : </label>
+        <p>{{f.modal}}</p>
+        </div>
+        <div>
+        <label>Category : </label>
+        <p>{{f.category}}</p>
+        </div>
+    </div>
+
+</div>

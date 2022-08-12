@@ -1,0 +1,46 @@
+.main_todo
+{
+    margin: 0;
+    padding: 0;
+}
+.header_todo
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:20px
+}
+.main_todo button{
+
+    border-radius: 10px;
+    background-color: aquamarine;
+}
+.input_todo
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    flex-direction: column;
+}
+.item_wrap_todo
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: aqua;
+    margin: 10px;
+    border-radius: 20px;
+}
+.todo_item
+{
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+   
+}
+.btn_todo
+{
+    display: flex;
+    gap:10px;
+}

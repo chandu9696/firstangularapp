@@ -38,7 +38,7 @@
 }
 .ele img
 {
-    max-width: 500px;
+    min-width: 500px;
     align-self: center;
 }
 .right_ele

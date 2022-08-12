@@ -22,6 +22,10 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { FavHotelComponent } from './fav-hotel/fav-hotel.component';
 import { ReviseconceptComponent } from './reviseconcept/reviseconcept.component';
 import { ObservableComponent } from './observable/observable.component';
+import { TodoMongoModule } from './todo-mongo/todo-mongo.module';
+import { PricingtabComponent } from './pricingtab/pricingtab.component';
+import { SponsersaddComponent } from './sponsersadd/sponsersadd.component';
+import { SettingComponent } from './setting/setting.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -40,14 +44,19 @@ import { ObservableComponent } from './observable/observable.component';
     LoadingSpinnerComponent,
     FavHotelComponent,
     ReviseconceptComponent,
-    ObservableComponent
+    ObservableComponent,
+    PricingtabComponent,
+    SponsersaddComponent,
+    SettingComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    TodoMongoModule
   ],
   providers: [],
   bootstrap: [AppComponent]

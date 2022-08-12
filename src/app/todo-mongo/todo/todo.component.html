@@ -1,0 +1,44 @@
+<div class="main_todo">
+
+    <div class="header_todo">
+        <h1>This is our Todo App</h1>
+        <button (click)="toggleIndicator()" *ngIf="!toggleindicate">Add Task</button>
+    </div>
+    <div *ngIf="toggleindicate">
+        <form class="input_todo">
+           
+            <label for="description">Description</label>
+           <input type="text" name="description" [formControl]="description">
+
+
+           <label for="urgency">Add urgency</label>
+           <select name="urgency" [formControl]="urgency">
+            <option value="high">High</option>
+            <option value="medium">Medium</option>
+            <option value="low" selected>Low</option>
+           </select>
+           <button (click)="check_value()" class="btn" [disabled]="!loginForm.valid">Proceed</button>
+
+        </form>
+       
+
+    </div>
+    <div *ngFor="let f of ListOfTodoItems">
+        <div class="item_wrap_todo">
+            <div class="todo_item">
+                <label>Task:</label>
+                <p>{{f.description}}</p>
+            </div>
+
+             <div class="todo_item">
+                <label>Urgency:</label>
+                <p>{{f.urgency}}</p>
+            </div>
+            <div class="btn_todo">
+                <button (click)="update_Todo(f.description,f.urgency)">Edit</button>
+                <button (click)="delete_Todo(f.description)">Delete</button>
+            </div>
+        </div>
+        
+    </div>
+</div>
